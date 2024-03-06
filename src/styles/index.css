@@ -39,8 +39,70 @@ small {
 }
 .window-actions button img {
     width: 16px;
-    height: 16px;
 }
 .window-actions button:hover {
     background-color: var(--secondary);
+}
+.menubar-branding {
+    user-select: none;
+}
+.toolbar {
+    padding: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.toolbar button {
+    -webkit-appearance: none;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 10px;
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--primary);
+}
+.toolbar button:hover {
+    background-color: var(--secondary);
+}
+.division-line {
+    border-left: 1px solid var(--text);
+    margin-left: 10px;
+    height: 35px;
+}
+.simulation-speed-indicator {
+    margin-left: 10px;
+    user-select: none;
+    align-self: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.quick-tool {
+    flex-direction: column;
+    display: flex;
+    padding: 5px;
+    flex: 1;
+    height: calc(100vh - 106px);
+    max-width: fit-content;
+    background-color: var(--secondary);
+}
+.quick-tool button {
+    -webkit-appearance: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    background-color: var(--secondary);
+}
+.quick-tool button:hover {
+    background-color: var(--tertiary);
+}
+.quick-tool button img  {
+    width: 20px;
 }

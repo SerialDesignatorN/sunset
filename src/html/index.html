@@ -2,20 +2,43 @@
 <html lang="en">
     <head>
         <title>New Logic 1 - Sunset Logic Simulator</title>
-        <meta name="viewport" content="width:device-width,initial-scale:1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="../styles/index.css">
         <link rel="stylesheet" href="../styles/theme.css">
     </head>
     <body>
         <header class="menubar">
+            <div class="menubar-branding">
+                <img src="../../build/icons/512x512.png" width="20" alt="Sunset Logo">
+            </div>
             <div class="menubar-centered">
                 <small>New Logic 1 - Sunset Logic Simulator</small>
             </div>
             <div class="window-actions">
-                <button><img src="../../assets/icons/minimize.svg"></button>
-                <button><img src="../../assets/icons/maximize.svg"></button>
-                <button><img src="../../assets/icons/close.svg"></button>
+                <button onclick="redirectToSomewhere(`https://afsc.org/news/6-ways-you-can-support-palestinians-gaza`)" title="Consider supporting Palestine"><img src="../../assets/icons/supportive.svg"></button>
+                <button id="minimize" title="Minimize"><img src="../../assets/icons/minimize.svg"></button>
+                <button id="maximize" title="Maximize"><img src="../../assets/icons/maximize.svg"></button>
+                <button id="close" title="Close"><img src="../../assets/icons/close.svg"></button>
             </div>
         </header>
+        <div class="main-content">
+            <div class="toolbar">
+                <button title="New Logic"><img src="../../assets/icons/newLogic.svg"></button>
+                <button title="Open Logic"><img src="../../assets/icons/openLogic.svg"></button>
+                <button title="Save Logic"><img src="../../assets/icons/saveLogic.svg"></button>
+                <div class="division-line"></div>
+                <button title="Slow Down Simulation"><img src="../../assets/icons/slowdown.svg"></button>
+                <span class="simulation-speed-indicator">1x</span>
+                <button title="Speed Up Simulation"><img src="../../assets/icons/fastforward.svg"></button>
+            </div>
+            <div class="container">
+                <div class="quick-tool">
+                    <button title="Run Logic (/)"><img src="../../assets/icons/run.svg"></button>
+                    <button title="Route (W)"><img src="../../assets/icons/route.svg"></button>
+                </div>
+            </div>
+        </div>
+        <script src="../js/WindowHandling.js"></script>
+        <script src="../js/LinkToShell.js"></script>
     </body>
 </html>
