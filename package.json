@@ -1,0 +1,21 @@
+{
+  "name": "sunset",
+  "version": "0.5.2",
+  "description": "simple and intuitive logic simulator",
+  "main": "entry.js",
+  "author": "zeankun.dev",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "instant-build": "electron-builder && electron-builder --win"
+  },
+  "private": false,
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
+  },
+  "devDependencies": {
+    "electron": "^24.3.1",
+    "electron-builder": "^24.6.3",
+    "electron-reloader": "^1.2.3"
+  }
+}
