@@ -35,6 +35,9 @@
                 <div class="quick-tool">
                     <button title="Run Logic (/)"><img src="../../assets/icons/run.svg"></button>
                     <button title="Route (W)"><img src="../../assets/icons/route.svg"></button>
+                    <button title="Add Object (Q)"><img src="../../assets/icons/addObject.svg"></button>
+                    <button title="Move Object (E)"><img src="../../assets/icons/move.svg"></button>
+                    <button title="Delete Object (T)"><img src="../../assets/icons/delete.svg"></button>
                 </div>
                 <div class="canvas-container">
                     <canvas></canvas>
@@ -64,11 +67,18 @@
                             <option value="display">Display</option>
                             <option value="text">Text (miscellaneous)</option>
                         </select>
+                        <br>
+                        <hr>
+                        <br>
+                        <h2>Properties</h2>
+                        <br>
+                        <div class="very-dynamic-form" id="dynamic-form"></div>
                     </div>
                 </div>
             </div>
         </div>
         <script src="../js/WindowHandling.js"></script>
         <script src="../js/LinkToShell.js"></script>
+        <script src="../js/DynamicFormConstructor.js"></script>
     </body>
 </html>
