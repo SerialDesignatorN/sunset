@@ -89,7 +89,7 @@ small {
     display: flex;
     padding: 5px;
     flex: 1;
-    height: calc(100vh - 106px);
+    height: calc(100vh - 132px);
     max-width: fit-content;
     background-color: var(--secondary);
 }
@@ -127,7 +127,7 @@ small {
     width: 18%;
     overflow-x: hidden;
     overflow-y: scroll;
-    height: calc(100vh - 106px);
+    height: calc(100vh - 132px);
     padding: 5px;
     background-color: var(--secondary);
 }
@@ -177,4 +177,9 @@ small {
 }
 .submit-form:hover {
     background-color: var(--tertiary);
+}
+.status-bar {
+    padding: 5px;
+    background-color: var(--secondary);
+    font-size: 9pt;
 }
